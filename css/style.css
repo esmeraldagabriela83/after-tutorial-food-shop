@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+html{
+  font-size: 20px;
+}
+body{
+  background-color: MintCream;
+font-family: 'Ubuntu', sans-serif;
+}
+
+.top-nav-bar{
+  height:60px;
+  top:0;
+  position:sticky;
+  background-color:Thistle   ;
+  margin-bottom:20px;
+  border-bottom:1.5px solid MediumOrchid ;
+}
+
+
+.logo{
+  height:50px;
+  margin:5px 10px;
+  border:4px solid blue;
+}
+
+.form-control{
+margin:15px 30px;
+border:1.5px solid MediumOrchid;
+box-shadow: none!important;
+border-top-left-radius:20px!important;
+border-bottom-left-radius:20px!important;
+border-top-right-radius: :0!important;
+border-bottom-right-radius: 0!important;
+}
+
+.input-group-text{
+  background-color: Thistle !important;
+  margin:8.5px 10px 3px 0 !important;
+  border-top-left-radius:20px!important;
+  border-bottom-left-radius:20px!important;
+  border-top-right-radius: :20!important;
+  border-bottom-right-radius: 20!important;
+  cursor:pointer;
+}
+
+.search-box{
+  display: inline-flex;
+  width: 60%;
+}
+
+
+
+
+
+
+
+
+
+/**/
