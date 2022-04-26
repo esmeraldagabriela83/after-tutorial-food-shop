@@ -2,9 +2,7 @@ console.log("food tutorial");
 //shopping cart
 //https://www.youtube.com/watch?v=YeFzkC2awTM   JavaScript Shopping Cart Tutorial for Beginners    web dev simplified
 
-//https://www.youtube.com/watch?v=-8LTPIJBGwQ   HTML & CSS Project Tutorial - Build a Recipes Website free code camp
 
-//https://www.youtube.com/watch?v=8I5UCTlMa34   #9 of 25 Beginner Projects - HTML, CSS, & JavaScript - Grocery List ( Responsive Design ) codefoxx
 
 if (document.readyState == `loading`) {
   document.addEventListener(`DOMContentLoaded`, ready);
