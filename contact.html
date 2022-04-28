@@ -3,6 +3,18 @@
 
 <head>
   <meta charset="UTF-8">
+
+  <!--map-->
+  <!-- https://account.mapbox.com/ -->
+  <!-- https://docs.mapbox.com/mapbox-gl-js/example/simple-map/ -->
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css" rel="stylesheet">
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js"></script>
+
+  <!-- <style>
+body { margin: 0; padding: 0; }
+#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+</style> -->
+  <!--map-->
   <title>contact page food shop project</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -48,78 +60,144 @@
   </div>
   <!----------------------------------------------------------------------------------->
 
-<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
-<!-- JavaScript Shopping Cart Tutorial for Beginners     https://www.youtube.com/watch?v=YeFzkC2awTM   -->
-<!-------------------------------------------------------------------------------------------------->
+  <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+  <!-- JavaScript Shopping Cart Tutorial for Beginners     https://www.youtube.com/watch?v=YeFzkC2awTM   -->
+  <!-------------------------------------------------------------------------------------------------->
+  <div class="container">
+    <div class="container-form">
+      <div class="header">
+        <h2>Create Account</h2>
+      </div>
+      <form id="form" class="form">
+        <div class="form-control">
+          <label for="username">Username</label>
+          <input type="text" placeholder="userconsumepizza3" id="username" />
+          <i class="fa fa-check-circle"></i>
+          <i class="fa fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="username">Email</label>
+          <input type="email" placeholder="a@pizza-portfolio.com" id="email" />
+          <i class="fa fa-check-circle"></i>
+          <i class="fa fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="username">Password</label>
+          <input type="password" placeholder="Password" id="password" />
+          <i class="fa fa-check-circle"></i>
+          <i class="fa fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="username">Password check</label>
+          <input type="password" placeholder="Password two" id="password2" />
+          <i class="fa fa-check-circle"></i>
+          <i class="fa fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
 
-<div class="container">
-	<div class="header">
-		<h2>Create Account</h2>
-	</div>
-	<form id="form" class="form">
-		<div class="form-control">
-			<label for="username">Username</label>
-			<input type="text" placeholder="florinpop17" id="username" />
-			<i class="fas fa-check-circle"></i>
-			<i class="fas fa-exclamation-circle"></i>
-			<small>Error message</small>
-		</div>
-		<div class="form-control">
-			<label for="username">Email</label>
-			<input type="email" placeholder="a@florin-pop.com" id="email" />
-			<i class="fas fa-check-circle"></i>
-			<i class="fas fa-exclamation-circle"></i>
-			<small>Error message</small>
-		</div>
-		<div class="form-control">
-			<label for="username">Password</label>
-			<input type="password" placeholder="Password" id="password"/>
-			<i class="fas fa-check-circle"></i>
-			<i class="fas fa-exclamation-circle"></i>
-			<small>Error message</small>
-		</div>
-		<div class="form-control">
-			<label for="username">Password check</label>
-			<input type="password" placeholder="Password two" id="password2"/>
-			<i class="fas fa-check-circle"></i>
-			<i class="fas fa-exclamation-circle"></i>
-			<small>Error message</small>
-		</div>
-		<button>Submit</button>
-	</form>
-</div>
+        <!-- add comment -->
 
+        <div class="form-control">
+          <label for="username">Write your comment</label><br></br>
+          <!-- <input type="comment" placeholder="Write your comment" id="comment"/> -->
+          <!--TEXTAREA FROM W 3 SCHOOL-->
+          <textarea id="comment" placeholder="Comment" name="pizza-comment" rows="4" cols="50"></textarea>
+          <!--TEXTAREA FROM W 3 SCHOOL-->
+          <i class="fa fa-check-circle"></i>
+          <i class="fa fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+
+        <!--add comment -->
+        <button>Submit</button>
+      </form>
+      <ion-icon name="pizza-outline"></ion-icon>
+    </div>
+  </div>
   <!---------------------------------------------------------------------------------------------------->
 
+  <div class="container">
+
+  <div class="user-data"></div>
+
+    <div id="center-svg-pizza">
+      <img src="./images/pizza-sharing.svg" alt="pizza-sharing-svg-unDraw" />
+    </div>
+
+  </div>
+
+  <!-------------------------------------------------------------------------------------------------------------->
+
+  <!-------------------------------------------------------------------------------------------------------------->
+<div class="container">
+<div class="banner-text">
+<a href="#"><span></span>Bucharest ; Colentina street ; section 2 ; number 10</a>
+</div>
+</div>
+<!-------------------------------------------------------------------------------------------------------------->
+
+  <!--map-->
+  <div class="container">
+  <h3 class="title-map">Find us on the map</h3>
+
+  <div id="makeMap">
+    <div id='map'></div>
+  </div>
+
+</div>
+  <!--map-->
+
+  <!-------------------------------------------------------------------------------------------------------------->
   <footer>
-        <div class="container">
+    <div class="container">
 
-            <div id="icons">
-                <div class="footerIcons"><a href="https://facebook.com/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></div>
-                <div class="footerIcons"><a href="https://instagram.com/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></div>
-                <div class="footerIcons"><a href="https://twitter.com/" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></div>
-            </div>
+      <div id="icons">
+        <div class="footerIcons"><a href="https://facebook.com/" target="_blank">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a></div>
+        <div class="footerIcons"><a href="https://instagram.com/" target="_blank">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a></div>
+        <div class="footerIcons"><a href="https://twitter.com/" target="_blank">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a></div>
+      </div>
 
-        <!--sources links-->
-        <a href="#" title="show and hide source links" class="btn_show_hide"><h3>sources</h3></a>
-        <div id="divSources" class="hidden">
-            <h5><a href="https://www.youtube.com/watch?v=rsd4FNGTRBw"
-               target="_blank">
-        https://www.youtube.com/watch?v=rsd4FNGTRBw
-             </a></h5>
+      <!--sources links-->
+      <a href="#" title="show and hide source links" class="btn_show_hide">
+        <h3>sources</h3>
+      </a>
+      <div id="divSources" class="hidden">
+        <h5><a href="https://www.youtube.com/watch?v=rsd4FNGTRBw" target="_blank">
+            https://www.youtube.com/watch?v=rsd4FNGTRBw
+          </a></h5>
 
-        </div>
-        </div>
+          <h5><a href="https://docs.mapbox.com/mapbox-gl-js/example/simple-map/" target="_blank">
+            https://docs.mapbox.com/mapbox-gl-js/example/simple-map/
+            </a></h5>
 
-      </footer>
-          <!--footer-->
+            <h5><a href="https://account.mapbox.com/" target="_blank">
+            https://account.mapbox.com/
+              </a></h5>
+
+              <h5><a href="https://www.youtube.com/watch?v=lBfshkPlMW8" target="_blank">
+              https://www.youtube.com/watch?v=lBfshkPlMW8
+                </a></h5>
+
+      </div>
+    </div>
+
+  </footer>
+  <!--footer-->
 
 </body>
 <script src="js/nav.js" type="text/javascript"></script>
 <script src="js/contact-form.js" type="text/javascript"></script>
+<script src="js/map.js" type="text/javascript"></script>
 
 <script src="js/footer-show-hide.js" type="text/javascript"></script>
-
-
 
 </html>

@@ -5,26 +5,42 @@ console.log("contact page with form");
 
 const form = document.getElementById('form');
 const username = document.getElementById('username');
+
 const email = document.getElementById('email');
+
 const password = document.getElementById('password');
+
 const password2 = document.getElementById('password2');
 
-form.addEventListener('submit', e => {
-	e.preventDefault();
+const comment = document.getElementById('comment');
+
+form.addEventListener('submit', event => {
+	event.preventDefault();
 
 	checkInputs();
+
 });
 
 function checkInputs() {
+	//get the values from the inputs
 	// trim to remove the whitespaces
 	const usernameValue = username.value.trim();
+	console.log("usernameValue is : " , usernameValue);
 	const emailValue = email.value.trim();
+	console.log("emailValue is : " , emailValue);
 	const passwordValue = password.value.trim();
+		console.log("passwordValue is : " , passwordValue);
 	const password2Value = password2.value.trim();
+		console.log("passwor2dValue is : " , password2Value);
 
+		const commentValue = comment.value.trim();
+			console.log("your comment is : " , commentValue);
+
+//show error //add error class
 	if(usernameValue === '') {
 		setErrorFor(username, 'Username cannot be blank');
 	} else {
+		//add sucess class
 		setSuccessFor(username);
 	}
 
@@ -49,17 +65,61 @@ function checkInputs() {
 	} else{
 		setSuccessFor(password2);
 	}
+
+	//show error //add error class
+		if(commentValue === '') {
+			setErrorFor(comment, 'Comment cannot be blank');
+		} else {
+			//add sucess class
+			setSuccessFor(comment);
+		}
+
+	//user data to display on contact page after clicking on submit btn
+
+	function addUserInfo() {
+	  return `
+	  The name of user is : ${usernameValue}.
+		The email of user is : ${emailValue}.
+		The first password of user is : ${passwordValue}.
+		The second password of user is : ${password2Value}.
+		The comment of user is : ${commentValue}.
+	  `;
+	};
+	//apel functie
+	addUserInfo();
+	console.log("display user info in console : ", addUserInfo());
+
+	function displayUserData() {
+	  const userDataDiv = document.querySelector('.user-data');
+	  userDataDiv.innerText = addUserInfo();
+		 userDataDiv.addClassName = "container-form";
+// userDataDiv.style.margin = "2.5em 1.5em";
+ // userDataDiv.style.padding = "40px 60px";
+  userDataDiv.style.textAlign = "center";
+	userDataDiv.style.color = "DarkGoldenRod";
+			userDataDiv.style.borderRadius = "10px";
+		userDataDiv.style.boxShadow = "1px 1px 1.5px 1.5px gray";
+
+	  return userDataDiv;
+	}
+	//apel functie
+	displayUserData();
+
+	//user data to display on contact page after clicking on submit btn
 }
 
 function setErrorFor(input, message) {
 	const formControl = input.parentElement;
 	const small = formControl.querySelector('small');
+	//add error class
 	formControl.className = 'form-control error';
+	//add error message inside small
 	small.innerText = message;
 }
 
 function setSuccessFor(input) {
 	const formControl = input.parentElement;
+	//add sucess class
 	formControl.className = 'form-control success';
 }
 
@@ -67,7 +127,4 @@ function isEmail(email) {
 	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }
 
-
-
-
-//
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
