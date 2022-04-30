@@ -71,7 +71,7 @@ body { margin: 0; padding: 0; }
       <form id="form" class="form">
         <div class="form-control">
           <label for="username">Username</label>
-          <input type="text" placeholder="userconsumepizza3" id="username" />
+          <input type="text" placeholder="pizzaConsumer" id="username" />
           <i class="fa fa-check-circle"></i>
           <i class="fa fa-exclamation-circle"></i>
           <small>Error message</small>
@@ -111,17 +111,84 @@ body { margin: 0; padding: 0; }
           <small>Error message</small>
         </div>
 
+        <!--https://www.youtube.com/watch?v=Cu0OwlJNXuQ   completare formular-->
+
+        <div class="header second">
+          <h2>Place your pizza order</h2>
+          <p class="ringPizza">You can ring us on 0722 00 00 00 or pick up at Colentina 10 Street</p>
+        </div>
+
+        <table>
+          <tr>
+            <td>Phone</td>
+
+            <td>
+              <input type="text" name:"ph" size="30" maxlength="10" value="A number you can ring" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>Family</td>
+            <td>
+              <input type="radio" name:"size" value="Family" />
+            </td>
+          <tr>
+
+          <tr>
+            <td>Large</td>
+            <td>
+              <input type="radio" name:"size" value="Large" />
+            </td>
+          <tr>
+
+          <tr>
+            <td>Small</td>
+            <td>
+              <input type="radio" name:"size" value="Small" />
+            </td>
+          <tr>
+
+          <tr>
+            <td>Type</td>
+            <td>
+              <select name="type" size="4" multiple="multiple">
+                <option value="The lot">The lot</option>
+                <option value="Anssie">Anssie</option>
+                <option value="BQQ Chicken">BQQ Chicken</option>
+                <option value="Vegetarian">Vegetarian</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Pickup ?</td>
+            <td rowspan="2">
+              <input type="radio" name:"pickuporderdeliver" /><br></br>
+              <input type="radio" name:"pickuporderdeliver" />
+            </td>
+          </tr>
+
+
+          <tr>
+            <td>Deliver ?</td>
+          </tr>
+        </table>
+
+
+
+        <!--https://www.youtube.com/watch?v=Cu0OwlJNXuQ-->
+
         <!--add comment -->
         <button>Submit</button>
       </form>
       <ion-icon name="pizza-outline"></ion-icon>
     </div>
   </div>
-  <!---------------------------------------------------------------------------------------------------->
+  <!------------------------------------------------------------------------------------------------>
 
   <div class="container">
 
-  <div class="user-data"></div>
+    <div class="user-data"></div>
 
     <div id="center-svg-pizza">
       <img src="./images/pizza-sharing.svg" alt="pizza-sharing-svg-unDraw" />
@@ -132,22 +199,22 @@ body { margin: 0; padding: 0; }
   <!-------------------------------------------------------------------------------------------------------------->
 
   <!-------------------------------------------------------------------------------------------------------------->
-<div class="container">
-<div class="banner-text">
-<a href="#"><span></span>Bucharest ; Colentina street ; section 2 ; number 10</a>
-</div>
-</div>
-<!-------------------------------------------------------------------------------------------------------------->
+  <div class="container">
+    <div class="banner-text">
+      <a href="#"><span></span>Bucharest ; Colentina street ; section 2 ; number 10</a>
+    </div>
+  </div>
+  <!-------------------------------------------------------------------------------------------------------------->
 
   <!--map-->
   <div class="container">
-  <h3 class="title-map">Find us on the map</h3>
+    <h3 class="title-map">Find us on the map</h3>
 
-  <div id="makeMap">
-    <div id='map'></div>
+    <div id="makeMap">
+      <div id='map'></div>
+    </div>
+
   </div>
-
-</div>
   <!--map-->
 
   <!-------------------------------------------------------------------------------------------------------------->
@@ -175,17 +242,21 @@ body { margin: 0; padding: 0; }
             https://www.youtube.com/watch?v=rsd4FNGTRBw
           </a></h5>
 
-          <h5><a href="https://docs.mapbox.com/mapbox-gl-js/example/simple-map/" target="_blank">
+        <h5><a href="https://docs.mapbox.com/mapbox-gl-js/example/simple-map/" target="_blank">
             https://docs.mapbox.com/mapbox-gl-js/example/simple-map/
-            </a></h5>
+          </a></h5>
 
-            <h5><a href="https://account.mapbox.com/" target="_blank">
+        <h5><a href="https://account.mapbox.com/" target="_blank">
             https://account.mapbox.com/
-              </a></h5>
+          </a></h5>
 
-              <h5><a href="https://www.youtube.com/watch?v=lBfshkPlMW8" target="_blank">
-              https://www.youtube.com/watch?v=lBfshkPlMW8
-                </a></h5>
+        <h5><a href="https://www.youtube.com/watch?v=lBfshkPlMW8" target="_blank">
+            https://www.youtube.com/watch?v=lBfshkPlMW8
+          </a></h5>
+
+        <h5><a href="https://www.youtube.com/watch?v=Cu0OwlJNXuQ" target="_blank">
+            https://www.youtube.com/watch?v=Cu0OwlJNXuQ
+          </a></h5>
 
       </div>
     </div>

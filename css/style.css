@@ -812,7 +812,22 @@ box-shadow: 0.5px 0.5px 0.7px 0.7px gray;
 .form-control:nth-of-type(5) label {
 	display: inline-block;
 }
+/*--------------------------------------------------------------------------completare formular--------------------------------------*/
 
+.container-form .header.second{
+  border-top: 5px solid #785807;
+  background-color: DarkGoldenRod;
+  padding: 20px 40px;
+  border-radius: 10px ;
+}
+
+.container-form .ringPizza{
+  color:floralwhite;
+  text-align: center;
+  margin:1.5em 0 0.5em 0;
+}
+
+/*--------------------------------------------------------------------------completare formular--------------------------------------------------*/
 /*-------------------------------------------------------------------user-data------------------------------------------------*/
 
 .user-data{
@@ -839,7 +854,7 @@ border-radius: 10px;
 color:DarkGoldenRod;
   position: relative;
   z-index: 1;
-  transition:color 0.5s;
+  transition:color 1.5s;
 }
 
 .banner-text a span{
