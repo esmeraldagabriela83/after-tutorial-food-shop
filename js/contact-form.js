@@ -14,6 +14,8 @@ const password2 = document.getElementById('password2');
 
 const comment = document.getElementById('comment');
 
+const phoneUser = document.getElementById('userPhone');
+
 form.addEventListener('submit', event => {
 	event.preventDefault();
 
@@ -34,7 +36,10 @@ function checkInputs() {
 		console.log("passwor2dValue is : " , password2Value);
 
 		const commentValue = comment.value.trim();
-			console.log("your comment is : " , commentValue);
+			console.log("your comment value is : " , commentValue);
+
+			const phoneUserValue = phoneUser.value.trim();
+				console.log("your phone number value is : " , phoneUserValue);
 
 //show error //add error class
 	if(usernameValue === '') {
@@ -74,6 +79,13 @@ function checkInputs() {
 			setSuccessFor(comment);
 		}
 
+		if(phoneUserValue === '') {
+			setErrorFor(phoneUser, 'Phone number cannot be blank');
+		} else {
+			//add sucess class
+			setSuccessFor(phoneUser);
+		}
+
 	//user data to display on contact page after clicking on submit btn
 
 	function addUserInfo() {
@@ -83,6 +95,7 @@ function checkInputs() {
 		The first password of user is : ${passwordValue}.
 		The second password of user is : ${password2Value}.
 		The comment of user is : ${commentValue}.
+		The phone number of user is : ${phoneUserValue}.
 	  `;
 	};
 	//apel functie

@@ -324,6 +324,7 @@ body {
 }
 
 /*----------------------------------shopping cart --------------------------------------------------------*/
+
 /*empty div*/
 .clear {
   clear: both;
@@ -373,7 +374,7 @@ body {
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: DarkGoldenRod;
 }
 
 /* Caption text */
@@ -589,7 +590,7 @@ body {
 }
 
 /* --------------------------------------------------home page before-after-slider */
-/*--------------------------------------------------------------------------------------multiple images slider*/
+/*--------------------------------------------------------------------------------------previous and next multiple images slider*/
 .slider {
   padding: 1.5em;
   display: flex;
@@ -617,320 +618,28 @@ body {
   margin: 0 0.75em;
 }
 
-/*--------------------------------------------------------------------------------------multiple images slider*/
+/*--------------------------------------------------------------------------------------previous and next multiple images slider*/
 
-/*----------------------------------------------------------contact page ---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------change image using onclick(event)-----------------------*/
 
-.container-form{
-  margin-top: 2.5em;
-  border-radius: 10px;
-  background-color: floralwhite;
-  padding-bottom: 1.5em;
-  box-shadow: 1px 1px 1.5px 1.5px gray;
-  position:relative;
-}
-
-.container-form ion-icon{
-  color:DarkGoldenRod;
-  background-color: floralwhite;
-  font-size: 3.5rem;
-box-shadow: 1px 1px 1.5px 1.5px gray;
-  border-radius: 50%;
-  padding: 0.15em;
-margin-left: calc(50% - 0.7em);
-margin-bottom: -1.15em;
-}
-
-.container-form ion-icon:hover{
-    color:#785807;
-    transition:0.3s;
-}
-
-#center-svg-pizza{
+.centreONclick{
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-#center-svg-pizza img{
-  height: 22em;
-  width:100%;
-  border-top: 5px solid #785807;
-border-bottom: 5px solid #785807;
-box-shadow: 1px 1px 1.5px 1.5px gray;
-border-radius: 10px;
-padding-top:2.5em;
-margin-top: 3.5em;
-background-color: DarkGoldenRod;
+.onCLICK-IMG:hover{
+  cursor:pointer;
 }
 
-@media only screen and (max-width: 959px) {
-  #center-svg-pizza img{
-    height: 15em;
-    width:100%;
-  }
+.onCLICK-IMG{
+  transition:1s;
 }
 
-#center-svg-pizza img:hover{
-  background-color: #785807;
-  transition:0.3s;
+.onCLICK-IMG:active{
+  transform:scale(0.7);
 }
 
-.header {
-	border-bottom: 5px solid #785807;
-	background-color: DarkGoldenRod;
-	padding: 20px 40px;
-  border-radius: 10px 10px 0 0;
-}
-
-.header h2 {
-	margin: 0;
-  text-align: center;
-  color:MintCream;
-}
-
-.form {
-	padding: 30px 40px;
-  color:DarkGoldenRod;
-}
-
-.form-control {
-	margin-bottom: 10px;
-	padding-bottom: 20px;
-	position: relative;
-}
-
-.form-control label {
-	display: inline-block;
-	margin-bottom: 5px;
-}
-
-.form-control input {
-	border: 2.5px solid DarkGoldenRod;
-	border-radius: 5px;
-	display: block;
-	font-family: inherit;
-	font-size: 14px;
-	padding: 10px;
-	width: 100%;
-}
-
-.form-control input:focus {
-	outline: 0;
-	border-color: #785807;
-}
-
-.form-control.success input {
-	border-color: #2ecc71;
-}
-
-.form-control.error input {
-	border-color: #e74c3c;
-}
-
-.form-control i {
-	visibility: hidden;
-	position: absolute;
-	top: 40px;
-	right: 10px;
-}
-
-.form-control.success i.fa-check-circle {
-	color: #2ecc71;
-	visibility: visible;
-}
-
-.form-control.error i.fa-exclamation-circle {
-	color: #e74c3c;
-	visibility: visible;
-}
-
-.form-control small {
-	color: #785807;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	visibility: hidden;
-}
-
-.form-control.error small {
-	visibility: visible;
-}
-
-.form button {
-	background-color: DarkGoldenRod;
-box-shadow: 0.5px 0.5px 0.7px 0.7px gray;
-	border-radius: 10px;
-	color: mintcream;
-  font-weight: bold;
-  font-size: 1.5rem;
-	display: block;
-	font-family: inherit;
-		padding: 20px 40px;
-	margin-top: 20px;
-	width: 100%;
-}
-
-.form{
-  position:relative;
-}
-
-/*-----------------------------textarea---------------------*/
-
-.form-control textarea {
-	border: 2.5px solid DarkGoldenRod;
-	border-radius: 5px;
-	display: block;
-	font-family: inherit;
-	font-size: 14px;
-	padding: 10px;
-	width: 100%;
-}
-
-.form-control textarea:focus {
-	outline: 0;
-	border-color: #785807;
-}
-
-.form-control.success textarea {
-	border-color: #2ecc71;
-}
-
-.form-control.error textarea {
-	border-color: #e74c3c;
-}
-
-/*---https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_textarea---------------------------------------------------------------------------------------------------------------------------*/
-
-.form-control:nth-of-type(5) i {
-	visibility: hidden;
-	position: absolute;
-	top: 90px;
-	right: 10px;
-}
-
-.form-control:nth-of-type(5) label {
-	display: inline-block;
-}
-/*--------------------------------------------------------------------------completare formular--------------------------------------*/
-
-.container-form .header.second{
-  border-top: 5px solid #785807;
-  background-color: DarkGoldenRod;
-  padding: 20px 40px;
-  border-radius: 10px ;
-}
-
-.container-form .ringPizza{
-  color:floralwhite;
-  text-align: center;
-  margin:1.5em 0 0.5em 0;
-}
-
-/*--------------------------------------------------------------------------completare formular--------------------------------------------------*/
-/*-------------------------------------------------------------------user-data------------------------------------------------*/
-
-.user-data{
-margin-top: 3.5em;
-padding-bottom: 1.5em;
-position:relative;
-}
-
-/*----------------------------------------------------------contact page ---------------------------------------------------------------------------*/
-
-.banner-text a{
-  width:100%;
-  display:block;
-  text-align: center;
-  font-weight: bold;
-  margin:3.5em 0 0.5em 0;;
-  padding:20px 0 ;
-
-  border-top: 5px solid #785807;
-border-bottom: 5px solid #785807;
-box-shadow: 1px 1px 1.5px 1.5px gray;
-border-radius: 10px;
-
-color:DarkGoldenRod;
-  position: relative;
-  z-index: 1;
-  transition:color 1.5s;
-}
-
-.banner-text a span{
-  position: absolute;
-width:0%;
-height:100%;
-top:0;
-left:0;
-
-border-radius: 5px;
-color:floralwhite;
-  overflow: hidden;
-background-color: DarkGoldenRod;
-z-index: -1;
-transition: 0.5s;
-}
-
-.banner-text a:hover span{
-  width: 100%;
-
-}
-
-.banner-text a:hover{
-  color:floralwhite;
-}
-
-/*--------------------------------------------------------------------------------------------------------------------------------------*/
-.title-map{
-  color: DarkGoldenRod;
-  text-align: center;
-  margin-top: 2.5em;
-  margin-bottom: 2.5em;
-  text-decoration: overline;
-  text-transform: capitalize;
-}
-
-.title-map:hover{
-  color: #785807;
-}
-
-@media only screen and (max-width: 959px) {
-  #makeMap{
-    position: relative;
-    height: 15em;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-@media only screen and (min-width: 960px) {
-  #makeMap{
-    position: relative;
-    height: 22em;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-#map {
-   position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  /* margin: 0 1em; */
-  border-top: 5px solid #785807;
-border-bottom: 5px solid #785807;
-box-shadow: 1px 1px 1.5px 1.5px gray;
-border-radius: 10px;
- }
-
-
-
+/*---------------------------------------------------------------------------------------------------change image using onclick(event)-----------------------*/
 /*footer*/
 .hidden {
   display: none;
