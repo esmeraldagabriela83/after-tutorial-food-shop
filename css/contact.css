@@ -421,9 +421,13 @@ input , textarea{
 margin-top: 3.5em;
 padding-bottom: 1.5em;
 position:relative;
+/* background-color: floralwhite; */
 }
 
 /*----------------------------------------------------------contact page ---------------------------------------------------------------------------*/
+.banner-text {
+  background-color: floralwhite;
+}
 
 .banner-text a{
   width:100%;
@@ -516,9 +520,50 @@ box-shadow: 1px 1px 1.5px 1.5px gray;
 border-radius: 10px;
  }
 
+/*-------------------------------------------------------------------------------------------------text with background image*/
+#enjoyPizza{
+margin-top:3em;
+margin-bottom: -1.5em;
+  background-repeat: no-repeat;
+ background-image: url(../images/pizza-text-01.png);
+ background-position: center;
+ background-size: cover;
+ background-color: DarkGoldenRod;
+ border-top: 5px solid #785807;
+border-bottom: 5px solid #785807;
+box-shadow: 1px 1px 1.5px 1.5px gray;
+border-radius: 10px;
+}
+#enjoyPizza:hover{
+  background-color: #785807;
+}
+
+@media only screen and (min-width: 960px) {
+  #enjoyPizza , #haveFun{
+    height:11em;
+  }
+}
+
+@media only screen and (max-width: 959px) {
+  #enjoyPizza , #haveFun{
+    height:7.5em;
+     background-image: url(../images/pizza-background-01.png);
+  }
+}
+
+body{
+    background-repeat: repeat-x repeat-y;
+ background-image: url(../images/xd-pizza.svg);
+}
+
+/*
+background-image: url("paper.gif");
+  background-repeat: repeat-y;*/
+
+  /*https://www.w3schools.com/cssref/pr_background-repeat.asp*/
 
 
-
+/*-------------------------------------------------------------------------------------------------text with background image*/
 
 /*footer*/
 .hidden {
@@ -548,7 +593,6 @@ footer ion-icon {
   margin: 1em 0.7em;
   padding: 0.07em;
   border-radius: 50%;
-  /* box-shadow: 3px 3px 2.5px 3px gray; */
 }
 
 footer ion-icon:hover {
@@ -577,9 +621,13 @@ footer #divSources h5 a {
   padding: 1.5em 0;
 }
 
+footer #divSources h5 a:last-of-type{
+  padding-bottom: -1.5em;
+}
+
 footer #divSources h5 a:hover {
   color: #785807;
 }
 
-/*footer*/
+
 /**/
