@@ -428,6 +428,8 @@ body {
 
 /*-----------------------------------------------------------slideshow w 3 school-----------------------------------*/
 /*home click on button to choose image----------------------------------------------------------------------------------*/
+/*for screen*/
+
 .sliderClickButton {
   padding: 1.5em;
   display: flex;
@@ -455,15 +457,10 @@ body {
   color: DarkGoldenRod;
   font-weight: bold;
   text-decoration: overline;
-}
-
-@media only screen and (max-width: 959px) {
-  #containerImage p {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sliderButtonsClick {
@@ -478,7 +475,47 @@ body {
   margin: 0.75em 0.75em;
 }
 
+ @media only screen and (max-width: 959px) {
+  .slider-screen{
+    display:none;
+  }
+}
+/*for screen*/
+
+/*for mobile*/
+@media only screen and (min-width: 960px) {
+ .slider-mobile{
+   display:none;
+ }
+}
+ #containerImageMobile {
+   height: 11em;
+   border-radius: 10px;
+   margin-top: 3em;
+   margin-bottom: 1.5em;
+   box-shadow: 1px 1px 1.5px 1.5px gray;
+   /* padding:0 5em; */
+   background-image: radial-gradient(circle, DarkGoldenRod, MintCream, #785807);
+ }
+
+ #containerImageMobile:hover {
+   background-image: radial-gradient(circle, #785807, MintCream, DarkGoldenRod);
+ }
+
+ #containerImageMobile p {
+   margin-top: -3em;
+   color: DarkGoldenRod;
+   font-weight: bold;
+   text-decoration: overline;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+/*for mobile*/
 /*home click on button to choose image---------------------------------------------------------------------------------------*/
+
 /*image comparison slider !!!*/
 #centreDiv {
   display: flex;
@@ -634,8 +671,9 @@ body {
 }
 
 /*---------------------------------------------------------------------------------------------------change image using onclick(event)-----------------------*/
-/*------------------------------------------------------------------------------click on button to show image--*/
-.click-show-pizza .toggle {
+/*------------------------------------------------------------------------------click on button to hide image--*/
+
+.click-show-pizza .toggle-show-hide {
   display: none;
   /* visibility: hidden; */
 }
@@ -662,56 +700,83 @@ body {
   }
 }
 
-/* accordion */
+/*------------------------------------------------------------------------------click on button to hide image--*/
+/*click to show image ON SCREEN*/
 
-#accordion{
-border-left:3px solid DarkGoldenRod;
-border-right:3px solid DarkGoldenRod;
+@media only screen and (max-width: 959px) {
+  .screen {
+    display: none;
+  }
+}
+
+.toggleImage {
+  display: none;
+}
+
+/*click to show image ON SCREEN*/
+
+/*click to show image ON mobile*/
+
+@media only screen and (min-width: 960px) {
+  .mobile {
+    display: none;
+  }
+}
+
+.toggleImageMobile {
+  display: none;
+}
+
+/*click to show image ON mobile*/
+
+/* accordion */
+#accordion {
+  border-left: 3px solid DarkGoldenRod;
+  border-right: 3px solid DarkGoldenRod;
   margin-top: 3em;
 }
 
-.accordion-img-holder{
-  display:flex;
+.accordion-img-holder {
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#accordion section a{
+#accordion section a {
   text-align: center;
   text-decoration: overline;
-  color:DarkGoldenRod;
+  color: DarkGoldenRod;
 }
 
-#accordion section a:hover{
-    color:#785807;
+#accordion section a:hover {
+  color: #785807;
 }
 
-#accordion section a h3{
-  margin-bottom:1.5em;
-}
-
-#accordion section p{
-  text-align: center;
-  color:DarkGoldenRod;
+#accordion section a h3 {
   margin-bottom: 1.5em;
-  display:none;
 }
 
-#accordion section:target p{
-  display:block;
-}
-
-#accordion section img{
+#accordion section p {
   text-align: center;
-  display:none;
+  color: DarkGoldenRod;
+  margin-bottom: 1.5em;
+  display: none;
 }
 
-#accordion section:target img{
-  display:block;
+#accordion section:target p {
+  display: block;
+}
+
+#accordion section img {
+  text-align: center;
+  display: none;
+}
+
+#accordion section:target img {
+  display: block;
 }
 
 /* accordion */
-
 /*------------------------------------------------------------------------------click on button to show image--*/
 /*footer*/
 .hidden {
