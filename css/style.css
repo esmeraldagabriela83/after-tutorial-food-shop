@@ -438,8 +438,9 @@ body {
   flex-direction: column;
 }
 
-#containerImage {
-  height: 11em;
+#containerImageScreen {
+  height: 22em;
+  width:22em;
   border-radius: 10px;
   margin-top: 3em;
   margin-bottom: 1.5em;
@@ -448,11 +449,11 @@ body {
   background-image: radial-gradient(circle, DarkGoldenRod, MintCream, #785807);
 }
 
-#containerImage:hover {
+#containerImageScreen:hover {
   background-image: radial-gradient(circle, #785807, MintCream, DarkGoldenRod);
 }
 
-#containerImage p {
+#containerImageScreen p {
   margin-top: -3em;
   color: DarkGoldenRod;
   font-weight: bold;
@@ -483,11 +484,7 @@ body {
 /*for screen*/
 
 /*for mobile*/
-@media only screen and (min-width: 960px) {
- .slider-mobile{
-   display:none;
- }
-}
+
  #containerImageMobile {
    height: 11em;
    border-radius: 10px;
@@ -511,6 +508,12 @@ body {
    display: flex;
    align-items: center;
    justify-content: center;
+ }
+
+ @media only screen and (min-width: 960px) {
+  .slider-mobile{
+    display:none;
+  }
  }
 
 /*for mobile*/
@@ -650,8 +653,8 @@ body {
   margin: 0 0.75em;
 }
 
-/*--------------------------------------------------------------------------------------previous and next multiple images slider*/
-/*---------------------------------------------------------------------------------------------------change image using onclick(event)-----------------------*/
+/*--------------------------------------------------------------------------previous and next multiple images slider*/
+/*------------------------------------------------------------------------------change image using onclick(event)-----------------------*/
 .centreONclick {
   display: flex;
   align-items: center;
@@ -670,7 +673,7 @@ body {
   transform: scale(0.7);
 }
 
-/*---------------------------------------------------------------------------------------------------change image using onclick(event)-----------------------*/
+/*------------------------------------------------------------------change image using onclick(event)-----------------------*/
 /*------------------------------------------------------------------------------click on button to hide image--*/
 
 .click-show-pizza .toggle-show-hide {
@@ -701,6 +704,37 @@ body {
 }
 
 /*------------------------------------------------------------------------------click on button to hide image--*/
+
+/*---------------------------------------before and after button to switch image pizza*/
+
+.before-after-container-photo{
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top:3em;
+}
+
+@media only screen and (min-width: 960px) {
+  #before-after-div-photo {
+    height: 22em;
+    width: 30em;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1.5px 1.5px gray;
+  }
+}
+
+@media only screen and (max-width: 959px) {
+  #before-after-div-photo {
+    height: 15em;
+    width: 20em;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1.5px 1.5px gray;
+  }
+}
+
+/*---------------------------------------before and after button to switch image pizza*/
+
 /*click to show image ON SCREEN*/
 
 @media only screen and (max-width: 959px) {
@@ -734,6 +768,16 @@ body {
   border-left: 3px solid DarkGoldenRod;
   border-right: 3px solid DarkGoldenRod;
   margin-top: 3em;
+}
+
+@media only screen and (max-width: 959px) {
+  #accordion {
+    border-left: 3px solid DarkGoldenRod;
+    border-right: 3px solid DarkGoldenRod;
+    margin-top: 3em;
+    margin-left:3em;
+    margin-right:3em;
+  }
 }
 
 .accordion-img-holder {
@@ -777,6 +821,73 @@ body {
 }
 
 /* accordion */
+
+/*-----------------------------------------------pizza with background changing color on click*/
+.pizza-circle-container{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top:1.5em;
+}
+
+@media only screen and (min-width: 960px) {
+  #pizza-circle{
+    width:25em;
+    height:25em;
+    background-color: seagreen;
+    box-shadow: 1px 1px 1.5px 1.5px gray;
+    border-radius: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #pizza-circle-photo{
+    width:20em;
+    height:20em;
+    background-repeat: no-repeat;
+    background-image: url(../images/circle-pizza.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius:50%;
+    box-shadow: 1px 1px 1.5px 1.5px gray;
+  }
+}
+
+@media only screen and (max-width: 959px) {
+  #pizza-circle{
+    margin-top:3em;
+    width:18em;
+    height:18em;
+    background-color:seagreen;
+    box-shadow: 1px 1px 1.5px 1.5px gray;
+    border-radius: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #pizza-circle-photo{
+    width:15em;
+    height:15em;
+    background-repeat: no-repeat;
+    background-image: url(../images/circle-pizza.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius:50%;
+    box-shadow: 1px 1px 1.5px 1.5px gray;
+  }
+}
+
+.circle-pizza-btn{
+  padding:1em;
+  margin-top:3em;
+}
+
+/*-----------------------------------------------pizza with background changing color on click*/
+
+
 /*------------------------------------------------------------------------------click on button to show image--*/
 /*footer*/
 .hidden {

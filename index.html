@@ -91,7 +91,7 @@
   <div class="container">
     <div class="sliderClickButton slider-screen">
 
-      <div id="containerImage">
+      <div id="containerImageScreen">
         <p>CHOOSE YOUR PIZZA</p>
       </div><br>
 
@@ -173,11 +173,11 @@ https://www.youtube.com/watch?v=uAAD3mmQGRQ&t=5s-->
     <div class="mysliderButtons">
       <!--next and prev buttons-->
 
-      <button class="btn btn-primary" onclick="prev()">PREVIOUS</button>
-      <button class="btn btn-primary" onclick="next()">NEXT</button>
+      <button class="btn btn-primary"  id="prev-slider-btnPizza">PREVIOUS</button>
+      <button class="btn btn-primary"  id="next-slider-btnPizza">NEXT</button>
     </div>
   </div>
-
+  <!--SLIDER BEFORE AND AFTER-->
   <div class="clear"></div>
 
   <!-- change image using onclick(event) -->
@@ -197,25 +197,31 @@ https://www.youtube.com/watch?v=uAAD3mmQGRQ&t=5s-->
   </div>
   <!--click on button to hide image-->
 
+  <!--click on before and after button to change the image-->
+  <div class="container before-after-container-photo">
+    <div id="before-after-div-photo"></div>
+          <button id="before-after-photo-btn" class="btn-primary">BEFORE SALAD</button>
+  </div>
+  <!--click on before and after button to change the image-->
+
   <!--click on button to show image screen-->
 <div class="container click-show-pizza screen">
   <div id="expectImage.js" class="toggleImage"></div>
       <button id="showBTNImage" class="btn-primary">SHOW PIZZA</button>
 </div>
-  <!--click on button to show image mobile-->
-
   <!--click on button to show image screen-->
+
+  <!--click on button to show image mobile-->
 <div class="container click-show-pizza mobile">
   <div id="expectImageMobile.js" class="toggleImageMobile"></div>
       <button id="showBTNImageMobile" class="btn-primary">SHOW PIZZA</button>
 </div>
   <!--click on button to show image mobile-->
 
-
   <!--accordion-->
 
-  <div class="container">
-    <main id="accordion">
+  <!-- <div > -->
+    <main id="accordion" class="container">
 
       <section id="item1">
         <a href="#item1"><h3>PIZZA 1</h3></a>
@@ -276,9 +282,20 @@ https://www.youtube.com/watch?v=uAAD3mmQGRQ&t=5s-->
       </section>
 
     </main>
-  </div>
+  <!-- </div> -->
 
   <!--accordion-->
+
+<!--pizza with background changing color on click-->
+
+<div class="container pizza-circle-container">
+<div id="pizza-circle">
+<div id="pizza-circle-photo"></div>
+</div>
+<button class="btn-primary circle-pizza-btn">CHANGE THE BACKGROUND COLOR OF THE PIZZA</button>
+</div>
+
+<!--pizza with background changing color on click-->
 
   <footer>
     <div class="container">
@@ -448,6 +465,14 @@ https://www.youtube.com/watch?v=uAAD3mmQGRQ&t=5s-->
           <h5><a href="https://www.youtube.com/watch?v=YE4xl9Gh7GE" target="_blank">
               https://www.youtube.com/watch?v=YE4xl9Gh7GE
             </a></h5>
+
+          <h5><a href="https://www.youtube.com/watch?v=uAAD3mmQGRQ" target="_blank">
+              https://www.youtube.com/watch?v=uAAD3mmQGRQ
+            </a></h5>
+
+          <h5><a href="https://www.youtube.com/watch?v=jznWWxPZkvQ" target="_blank">
+            https://www.youtube.com/watch?v=jznWWxPZkvQ
+            </a></h5>
       </div>
     </div>
 
@@ -464,6 +489,8 @@ https://www.youtube.com/watch?v=uAAD3mmQGRQ&t=5s-->
 <script src="js/home-onclick-img.js" type="text/javascript"></script>
 <script src="js/show-hide-pizza.js" type="text/javascript"></script>
 <script src="js/show-image.js" type="text/javascript"></script>
+<script src="js/beforeAfterImageChangeBtn.js" type="text/javascript"></script>
+<script src="js/circle-pizza-change-backgroundColor.js" type="text/javascript"></script>
 
 <script src="js/footer-show-hide.js" type="text/javascript"></script>
 
