@@ -152,7 +152,69 @@ function updateCartTotal() {
 
   }
   total = Math.round(total * 100) / 100;
+
+  //
+var ifLess=`
+<div style="display:flex ;
+            align-items:center ;
+            justify-content:center ;
+            flex-direction:column;
+            margin-top:3em ;
+            margin-bottom:1.5em">
+
+    <span class="cart-item-title" style="margin-bottom:1.5em">BUY MORE</span>
+
+    <img src="./images/make-pizza.jpg"
+         alt="make-pizza-jpg-images"
+         style="width:15em;
+         height:11em;
+         border-radius:10px;
+         box-shadow:1px 1px 1.5px 1.5px gray">
+</div>`;
+
+
+var ifMore=`
+
+<div style="display:flex ;
+            align-items:center ;
+            justify-content:center ;
+            flex-direction:column;
+            margin-top:3em ;
+            margin-bottom:1.5em">
+
+    <span class="cart-item-title" style="margin-bottom:1.5em">BE HEALTHY</span>
+
+    <img src="./images/healthy.jpg"
+         alt="make-pizza-jpg-images"
+         style="width:15em;
+         height:11em;
+         border-radius:10px;
+         box-shadow:1px 1px 1.5px 1.5px gray">
+</div>`;
+
+var totalIf=document.getElementById("ifTotal");
+console.log("totalIf is : " , totalIf);
+
+  if(total>=0 && total <= 56.08){
+     totalIf.innerHTML = ifLess;
+  }else{
+      totalIf.innerHTML = ifMore;
+  }
+  //
+
   document.getElementsByClassName("cart-total-price")[0].innerText = `$` + total;
 }
 
-///
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//fixed button on shop page
+var fixedBtn=document.getElementById('fixed-shop-btn');
+console.log("fixedBtn is : " , fixedBtn);
+fixedBtn.innerText="GET A PIZZA!";
+
+function changeTextBtn(event){
+  this.innerText="ENJOY YOUR MEAL!" ;
+}
+
+fixedBtn.addEventListener("mouseover" , changeTextBtn);
+
+//fixed button on shop page

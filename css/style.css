@@ -324,6 +324,22 @@ body {
 }
 
 /*----------------------------------shopping cart --------------------------------------------------------*/
+
+/* fixed button on shop page */
+.floating-btn {
+    cursor: pointer;
+    padding: 12px 20px;
+    position: fixed;
+    bottom: 130px;
+    right: 20px;
+    z-index: 3;
+  }
+
+  .floating-btn:focus {
+    outline: none;
+  }
+/* fixed button on shop page */
+
 /*empty div*/
 .clear {
   clear: both;
