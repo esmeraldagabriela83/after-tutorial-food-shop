@@ -109,7 +109,8 @@ function checkInputs() {
 // userDataDiv.style.margin = "2.5em 1.5em";
  // userDataDiv.style.padding = "40px 60px";
   userDataDiv.style.textAlign = "center";
-	userDataDiv.style.color = "DarkGoldenRod";
+	userDataDiv.style.color = "#785807";
+	userDataDiv.style.fontWeight = "bold";
 			userDataDiv.style.borderRadius = "10px";
 		userDataDiv.style.boxShadow = "1px 1px 1.5px 1.5px gray";
 

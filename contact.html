@@ -73,30 +73,33 @@ body { margin: 0; padding: 0; }
       <form id="form" class="form" action="https://formsubmit.co/esmeraldagabriela83@yahoo.com" method="POST">
 
         <div class="form-control">
-          <label for="username">Username</label>
+          <label for="username">Username
           <input type="text" placeholder="pizzaConsumer" id="username" name="name" required />
+          </label>
           <i class="fa fa-check-circle"></i>
           <i class="fa fa-exclamation-circle"></i>
           <small>Error message</small>
         </div>
         <div class="form-control">
-          <label for="username">Email</label>
+          <label for="username">Email
           <input type="email" placeholder="a@pizza-portfolio.com" id="email" name="email" required />
-
+          </label>
           <i class="fa fa-check-circle"></i>
           <i class="fa fa-exclamation-circle"></i>
           <small>Error message</small>
         </div>
         <div class="form-control">
-          <label for="username">Password</label>
+          <label for="username">Password
           <input type="password" placeholder="Password" id="password" name="password" required />
+          </label>
           <i class="fa fa-check-circle"></i>
           <i class="fa fa-exclamation-circle"></i>
           <small>Error message</small>
         </div>
         <div class="form-control">
-          <label for="username">Password check</label>
+          <label for="username">Password check
           <input type="password" placeholder="Password two" id="password2" name="password2" required />
+          </label>
           <i class="fa fa-check-circle"></i>
           <i class="fa fa-exclamation-circle"></i>
           <small>Error message</small>
@@ -105,10 +108,11 @@ body { margin: 0; padding: 0; }
         <!-- add comment -->
 
         <div class="form-control">
-          <label for="username">Write your comment</label><br></br>
+          <label for="username">Write your comment
           <!-- <input type="comment" placeholder="Write your comment" id="comment"/> -->
           <!--TEXTAREA FROM W 3 SCHOOL-->
           <textarea id="comment" placeholder="Comment" name="pizza-comment" rows="4" cols="50"></textarea>
+          </label><br></br>
           <!--TEXTAREA FROM W 3 SCHOOL-->
           <i class="fa fa-check-circle"></i>
           <i class="fa fa-exclamation-circle"></i>
@@ -170,19 +174,20 @@ body { margin: 0; padding: 0; }
             </td>
           </tr>
         </div>
-        <div class="form-control">
+        <div class="form-control pickup-deliver">
           <tr>
-            <td>Pickup ?</td>
             <td rowspan="2">
-              <input id="pickupRadio" type="radio" name:"pickuporderdeliver" required /><br></br>
-              <input id="deliverRadio" type="radio" name:"deliverorderdeliver" required />
+               <label for="pickupRadio">Pickup ?
+                <input type="radio" id="pickupRadio" name="fav_language" value="pickuporderdeliver" required/>
+               </label><br>
+               <label for="deliverRadio" id="deliverRadioLabel">Deliver ?
+                <input type="radio" id="deliverRadio" name="fav_language" value="deliverorderdeliver" required/>
+               </label>
+
             </td>
           </tr>
         </div>
         <div class="form-control">
-          <tr>
-            <td>Deliver ?</td>
-          </tr>
         </div>
         <div class="form-control">
           <tr>

@@ -188,7 +188,7 @@ background-color: DarkGoldenRod;
 
 .form-control label {
 	display: inline-block;
-	margin-bottom: 5px;
+	margin-bottom: 5px;width: 100%;
 }
 
 .form-control input {
@@ -255,6 +255,7 @@ box-shadow: 1px 1px 1.5px gray;
 		padding: 20px 40px;
 	margin-top: 20px;
 	width: 100%;
+  border:none;
 }
 
 .form button:hover{
@@ -330,12 +331,25 @@ box-shadow: 1px 1px 1.5px gray;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 3.5em;
+    /* margin-left: 3.5em; */
+    margin-left: calc(50% - 15em);
+  }
+  .pickup-deliver{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: calc(50% - 11em);
+  }
+  #deliverRadioLabel{
+    margin-top:-2em;
+  }
+  #deliverRadio{
+    margin-top:-1.5em;
   }
 }
 
 @media only screen and (max-width: 959px) {
-  .family-large-small{
+  .family-large-small , .pickup-deliver{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -358,6 +372,7 @@ box-shadow: 1px 1px 1.5px gray;
 .multiple-pizza{
   display: flex;
   align-items: center;
+
 }
 
 .multiple-pizza select{
