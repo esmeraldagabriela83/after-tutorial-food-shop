@@ -338,6 +338,13 @@ body {
   .floating-btn:focus {
     outline: none;
   }
+
+@media only screen and (max-width:1180px) {
+  .floating-btn {
+    display:none;
+  }
+}
+
 /* fixed button on shop page */
 
 /*empty div*/
