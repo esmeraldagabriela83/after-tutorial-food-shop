@@ -123,7 +123,7 @@ function checkInputs() {
 }
 
 function setErrorFor(input, message) {
-	const formControl = input.parentElement;
+	const formControl = input.parentElement.parentElement;
 	const small = formControl.querySelector('small');
 	//add error class
 	formControl.className = 'form-control error';
