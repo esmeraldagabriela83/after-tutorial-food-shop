@@ -73,11 +73,13 @@ function checkInputs() {
 
 	//show error //add error class
 		if(commentValue === '') {
-			setErrorFor(comment, 'Comment cannot be blank');
+			setErrorForTextarea(comment, 'Comment cannot be blank');
 		} else {
 			//add sucess class
-			setSuccessFor(comment);
+			setSuccessForTextarea(comment);
 		}
+
+
 
 		if(phoneUserValue === '') {
 			setErrorFor(phoneUser, 'Phone number cannot be blank');
@@ -123,6 +125,9 @@ function checkInputs() {
 }
 
 function setErrorFor(input, message) {
+
+  event.preventDefault();
+
 	const formControl = input.parentElement.parentElement;
 	const small = formControl.querySelector('small');
 	//add error class
@@ -132,7 +137,7 @@ function setErrorFor(input, message) {
 }
 
 function setSuccessFor(input) {
-	const formControl = input.parentElement;
+	const formControl = input.parentElement.parentElement;
 	//add sucess class
 	formControl.className = 'form-control success';
 }
@@ -142,3 +147,22 @@ function isEmail(email) {
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function setErrorForTextarea(textarea, message) {
+
+	  event.preventDefault();
+
+	const formControl = textarea.parentElement.parentElement;
+	const small = formControl.querySelector('.form-control small');
+	formControl.className = 'form-control error';
+	small.innerText = message;
+}
+
+function setSuccessForTextarea(textarea) {
+	const formControl = textarea.parentElement.parentElement;
+	formControl.className = 'form-control success';
+}
+
+
+
+///

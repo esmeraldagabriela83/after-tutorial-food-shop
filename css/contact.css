@@ -386,9 +386,7 @@ box-shadow: 1px 1px 1.5px gray;
   color:#785807;
 }
 
-#resetPizza:hover{
-    background-color: #785807;
-}
+
 
 #pickupRadio{
   margin-top: -1.3em;
@@ -423,6 +421,10 @@ box-shadow: 1px 1px 1.5px 1.5px gray;
     padding: 20px 40px;
   margin-top: 20px;
   /* width: 100%; */
+}
+
+#resetPizza:hover{
+    background-color: #785807;
 }
 
 input , textarea{
