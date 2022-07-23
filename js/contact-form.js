@@ -16,6 +16,11 @@ const comment = document.getElementById('comment');
 
 const phoneUser = document.getElementById('userPhone');
 
+const pizzaType = document.getElementById("pizzaType");
+
+const deliveryTime= document.getElementById("deliveryTime");
+
+
 form.addEventListener('submit', event => {
 	event.preventDefault();
 
@@ -31,15 +36,21 @@ function checkInputs() {
 	const emailValue = email.value.trim();
 	console.log("emailValue is : " , emailValue);
 	const passwordValue = password.value.trim();
-		console.log("passwordValue is : " , passwordValue);
+	console.log("passwordValue is : " , passwordValue);
 	const password2Value = password2.value.trim();
-		console.log("passwor2dValue is : " , password2Value);
+	console.log("passwor2dValue is : " , password2Value);
 
-		const commentValue = comment.value.trim();
-			console.log("your comment value is : " , commentValue);
+	const commentValue = comment.value.trim();
+	console.log("your comment value is : " , commentValue);
 
-			const phoneUserValue = phoneUser.value.trim();
-				console.log("your phone number value is : " , phoneUserValue);
+  const phoneUserValue = phoneUser.value.trim();
+  console.log("your phone number value is : " , phoneUserValue);
+
+	const pizzaTypeValue = pizzaType.value;
+	console.log("pizzaTypeValue is : " , pizzaTypeValue);
+
+	const deliveryTimeValue = deliveryTime.value;
+	console.log("deliveryTimeValue is : " , deliveryTimeValue);
 
 //show error //add error class
 	if(usernameValue === '') {
@@ -98,6 +109,8 @@ function checkInputs() {
 		The second password of user is : ${password2Value}.
 		The comment of user is : ${commentValue}.
 		The phone number of user is : ${phoneUserValue}.
+		The choosen pizza is:${pizzaTypeValue}.
+		The choosen delivery hour is : ${deliveryTimeValue}.
 	  `;
 	};
 	//apel functie
