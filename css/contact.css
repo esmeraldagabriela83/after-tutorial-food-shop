@@ -511,6 +511,7 @@ transition: 0.5s;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: floralwhite;
   }
 }
 
@@ -522,6 +523,7 @@ transition: 0.5s;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: floralwhite;
   }
 }
 

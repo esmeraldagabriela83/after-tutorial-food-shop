@@ -137,6 +137,7 @@ function setErrorFor(input, message) {
 }
 
 function setSuccessFor(input) {
+
 	const formControl = input.parentElement.parentElement;
 	//add sucess class
 	formControl.className = 'form-control success';
@@ -159,6 +160,7 @@ function setErrorForTextarea(textarea, message) {
 }
 
 function setSuccessForTextarea(textarea) {
+
 	const formControl = textarea.parentElement.parentElement;
 	formControl.className = 'form-control success';
 }
