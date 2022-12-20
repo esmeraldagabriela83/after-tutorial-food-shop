@@ -10,11 +10,11 @@ const email = document.getElementById('email');
 
 const password = document.getElementById('password');
 
-const password2 = document.getElementById('password2');
+// const password2 = document.getElementById('password2');
 
 const comment = document.getElementById('comment');
 
-const phoneUser = document.getElementById('userPhone');
+const phoneUser = document.getElementById('user-phone');
 
 const pizzaType = document.getElementById("pizzaType");
 
@@ -37,8 +37,9 @@ function checkInputs() {
 	console.log("emailValue is : " , emailValue);
 	const passwordValue = password.value.trim();
 	console.log("passwordValue is : " , passwordValue);
-	const password2Value = password2.value.trim();
-	console.log("passwor2dValue is : " , password2Value);
+
+	// const password2Value = password2.value.trim();
+	// console.log("passwor2dValue is : " , password2Value);
 
 	const commentValue = comment.value.trim();
 	console.log("your comment value is : " , commentValue);
@@ -74,13 +75,16 @@ function checkInputs() {
 		setSuccessFor(password);
 	}
 
-	if(password2Value === '') {
-		setErrorFor(password2, 'Password2 cannot be blank');
-	} else if(passwordValue !== password2Value) {
-		setErrorFor(password2, 'Passwords does not match');
-	} else{
-		setSuccessFor(password2);
-	}
+	// if(password2Value === '') {
+	// 	setErrorFor(password2, 'Password2 cannot be blank');
+	// } else if(passwordValue !== password2Value) {
+	// 	setErrorFor(password2, 'Passwords does not match');
+	// } else{
+	// 	setSuccessFor(password2);
+	// }
+
+
+	
 
 	//show error //add error class
 		if(commentValue === '') {
@@ -106,7 +110,6 @@ function checkInputs() {
 	  The name of user is : ${usernameValue}.
 		The email of user is : ${emailValue}.
 		The first password of user is : ${passwordValue}.
-		The second password of user is : ${password2Value}.
 		The comment of user is : ${commentValue}.
 		The phone number of user is : ${phoneUserValue}.
 		The choosen pizza is:${pizzaTypeValue}.
@@ -120,13 +123,11 @@ function checkInputs() {
 	function displayUserData() {
 	  const userDataDiv = document.querySelector('.user-data');
 	  userDataDiv.innerText = addUserInfo();
-		 userDataDiv.addClassName = "container-form";
-// userDataDiv.style.margin = "2.5em 1.5em";
- // userDataDiv.style.padding = "40px 60px";
-  userDataDiv.style.textAlign = "center";
-	userDataDiv.style.color = "#785807";
-	userDataDiv.style.fontWeight = "bold";
-			userDataDiv.style.borderRadius = "10px";
+		userDataDiv.addClassName = "container-form";
+    userDataDiv.style.textAlign = "center";
+	  userDataDiv.style.color = "#785807";
+	  userDataDiv.style.fontWeight = "bold";
+		userDataDiv.style.borderRadius = "10px";
 		userDataDiv.style.boxShadow = "1px 1px 1.5px 1.5px gray";
 
 	  return userDataDiv;
@@ -180,4 +181,4 @@ function setSuccessForTextarea(textarea) {
 
 
 
-///
+///		The second password of user is : ${password2Value}.

@@ -187,14 +187,15 @@ background-color: DarkGoldenRod;
 }
 
 .form-control label {
-	display: inline-block;
-	margin-bottom: 5px;width: 100%;
+	/* display: inline-block; */
+	margin-bottom: 5px;
+  width: 100%;
 }
 
 .form-control input {
 	border: 2.5px solid DarkGoldenRod;
 	border-radius: 5px;
-	display: block;
+	/* display: block; */
 	font-family: inherit;
 	font-size: 14px;
 	padding: 10px;
@@ -243,24 +244,6 @@ background-color: DarkGoldenRod;
 	visibility: visible;
 }
 
-.form button {
-	background-color: DarkGoldenRod;
-box-shadow: 1px 1px 1.5px gray;
-	border-radius: 10px;
-	color: mintcream;
-  font-weight: bold;
-  font-size: 1.5rem;
-	display: block;
-	font-family: inherit;
-		padding: 20px 40px;
-	margin-top: 20px;
-	width: 100%;
-  border:none;
-}
-
-.form button:hover{
-  background-color: #785807;
-}
 
 .form{
   position:relative;
@@ -301,7 +284,7 @@ box-shadow: 1px 1px 1.5px gray;
 }
 
 .form-control:nth-of-type(5) label {
-	display: inline-block;
+	/* display: inline-block; */
 }
 /*--------------------------------------------------------------------------completare formular--------------------------------------*/
 
@@ -326,48 +309,9 @@ box-shadow: 1px 1px 1.5px gray;
     margin-top:-1.5em;
 }
 
-@media only screen and (min-width: 960px) {
-  .family-large-small{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* margin-left: 3.5em; */
-    margin-left: calc(50% - 15em);
-  }
-  .pickup-deliver{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: calc(50% - 11em);
-  }
-  #deliverRadioLabel{
-    margin-top:-2em;
-  }
-  #deliverRadio{
-    margin-top:-1.5em;
-  }
-}
 
-@media only screen and (max-width: 959px) {
-  .family-large-small , .pickup-deliver{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
 
-  #radioFamily{
-    margin:1.5em 0;
-  }
 
-  #radioLarge{
-    margin:1.5em 0;
-  }
-
-  #radioSmall{
-    margin:1.5em 0;
-  }
-}
 
 .multiple-pizza{
   display: flex;
@@ -388,20 +332,7 @@ box-shadow: 1px 1px 1.5px gray;
 
 
 
-#pickupRadio{
-  margin-top: -1.3em;
-}
 
-#deliverRadio{
-  margin-bottom: -3.7em;
-}
-
-#deliveryTime{
-  padding:0.5em;
-  border-radius: 3px;
-  border:1.5px solid DarkGoldenRod;
-  margin-left: calc(50% - 11.5em);
-}
 
 .form-control select option{
   color:DarkGoldenRod;
@@ -409,7 +340,7 @@ box-shadow: 1px 1px 1.5px gray;
   font-weight: bold;
 }
 
-#resetPizza{
+#resetPizza , #submit{
   background-color: DarkGoldenRod;
 box-shadow: 1px 1px 1.5px 1.5px gray;
   border-radius: 10px;
@@ -419,7 +350,7 @@ box-shadow: 1px 1px 1.5px 1.5px gray;
   display: block;
   font-family: inherit;
     padding: 20px 40px;
-  margin-top: 20px;
+  margin: 1.5em 0;
   /* width: 100%; */
 }
 
@@ -440,6 +371,8 @@ padding-bottom: 1.5em;
 position:relative;
 /* background-color: floralwhite; */
 }
+
+
 
 /*----------------------------------------------------------contact page ---------------------------------------------------------------------------*/
 .banner-text {

@@ -72,166 +72,147 @@ body { margin: 0; padding: 0; }
 
   <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
   <!-- JavaScript Shopping Cart Tutorial for Beginners     https://www.youtube.com/watch?v=YeFzkC2awTM   -->
-  <!-------------------------------------------------------------------------------------------------->
+ <!-------------------------------------------------------------------------------------------------->
 
-  <div class="container">
-    <div class="container-form">
-      <div class="header">
-        <h2>Create Account</h2>
-      </div>
+ <div class="container">
+   <div class="container-form">
+     <div class="header">
+       <h2>Create Account</h2>
+     </div>
 
-      <form id="form" class="form" action="https://formsubmit.co/esmeraldagabriela83@yahoo.com" method="POST">
+     <form id="form" class="form" action="contact.php" method="POST">
 
-        <div class="form-control">
-          <label for="username">Username
-          <input type="text" placeholder="pizzaConsumer" id="username" name="name" required />
-          </label>
-          <i class="fa fa-check-circle"></i>
-          <i class="fa fa-exclamation-circle"></i>
-          <small>Error message</small>
-        </div>
-        <div class="form-control">
-          <label for="username">Email
-          <input type="email" placeholder="a@pizza-portfolio.com" id="email" name="email" required />
-          </label>
-          <i class="fa fa-check-circle"></i>
-          <i class="fa fa-exclamation-circle"></i>
-          <small>Error message</small>
-        </div>
-        <div class="form-control">
-          <label for="username">Password
-          <input type="password" placeholder="Password" id="password" name="password" required />
-          </label>
-          <i class="fa fa-check-circle"></i>
-          <i class="fa fa-exclamation-circle"></i>
-          <small>Error message</small>
-        </div>
-        <div class="form-control">
-          <label for="username">Password check
-          <input type="password" placeholder="Password two" id="password2" name="password2" required />
-          </label>
-          <i class="fa fa-check-circle"></i>
-          <i class="fa fa-exclamation-circle"></i>
-          <small>Error message</small>
-        </div>
+       <div class="form-control">
+         <label for="username">Username</label>
+         <input type="text" placeholder="pizzaConsumer" id="username" name="name" required />
 
-        <!-- add comment -->
+         <i class="fa fa-check-circle"></i>
+         <i class="fa fa-exclamation-circle"></i>
+         <small>Error message</small>
+       </div>
+       <div class="form-control">
+         <label for="email">Email</label>
+         <input type="email" placeholder="a@pizza-portfolio.com" id="email" name="email" required />
 
-        <div class="form-control">
-          <label for="username">Write your comment
-          <!-- <input type="comment" placeholder="Write your comment" id="comment"/> -->
-          <!--TEXTAREA FROM W 3 SCHOOL-->
-          <textarea id="comment" placeholder="Comment" name="pizza-comment" rows="4" cols="50" required ></textarea>
-          </label>
-          <!--TEXTAREA FROM W 3 SCHOOL-->
-          <i class="fa fa-check-circle"></i>
-          <i class="fa fa-exclamation-circle"></i>
-          <small>Error message</small>
-        </div>
+         <i class="fa fa-check-circle"></i>
+         <i class="fa fa-exclamation-circle"></i>
+         <small>Error message</small>
+       </div>
 
-        <!--https://www.youtube.com/watch?v=Cu0OwlJNXuQ   completare formular-->
+       <div class="form-control">
+         <label for="password">Password</label>
+         <input type="password" placeholder="Password" id="password" name="password" required />
 
-        <div class="header second">
-          <h2>Place your pizza order</h2>
-          <p class="ringPizza">You can ring us on 0722 00 00 00 or pick up at Colentina 10 Street</p>
-        </div>
+         <i class="fa fa-check-circle"></i>
+         <i class="fa fa-exclamation-circle"></i>
+         <small>Error message</small>
+       </div>
+
+       <!-- <div class="form-control">
+         <label for="password2">Password check</label>
+         <input type="password" placeholder="Password two" id="password2" name="password2" required />
+
+         <i class="fa fa-check-circle"></i>
+         <i class="fa fa-exclamation-circle"></i>
+         <small>Error message</small>
+       </div> -->
+
+       <!-- add comment -->
+
+       <div class="form-control">
+         <label for="comment">Write your comment</label>
+         <!-- <input type="comment" placeholder="Write your comment" id="comment"/> -->
+         <!--TEXTAREA FROM W 3 SCHOOL-->
+         <textarea id="comment" placeholder="Comment" name="pizza-comment" rows="4" cols="50" required ></textarea>
+
+         <!--TEXTAREA FROM W 3 SCHOOL-->
+         <i class="fa fa-check-circle"></i>
+         <i class="fa fa-exclamation-circle"></i>
+         <small>Error message</small>
+       </div>
+
+       <!--https://www.youtube.com/watch?v=Cu0OwlJNXuQ   completare formular-->
+
+       <div class="header second">
+         <h2>Place your pizza order</h2>
+         <p class="ringPizza">You can ring us on 0722 00 00 00 or pick up at Colentina 10 Street</p>
+       </div>
 
 
-        <div class="form-control">
-          <tr>
-            <!-- <td>Phone </td> -->
-            <label id="label-phone-number" for="user-phone">Write your phone number</label><br></br>
-            <td>
-              <input id="userPhone" type="text" name:"ph" size="30" maxlength="10" placeholder="Phone number" value="" required />
-            </td>
-          </tr>
-        </div>
-        <!-- <table> -->
-        <div class="form-control family-large-small">
-          <tr>
-            <td>Family</td>
-            <td>
-              <input id="radioFamily" type="radio" name:"size" value="family" required />
-            </td>
-          <tr>
+       <div class="form-control">
 
-          <tr>
-            <td>Large</td>
-            <td>
-              <input id="radioLarge" type="radio" name:"size" value="large" required />
-            </td>
-          <tr>
 
-          <tr>
-            <td>Small</td>
-            <td>
-              <input id="radioSmall" type="radio" name:"size" value="small" required />
-            </td>
-          <tr>
-        </div>
-        <div class="form-control multiple-pizza">
-          <tr>
-            <td id="pizzaTypes">Type</td>
-            <td>
-              <select name="type" size="4" multiple="multiple" id="pizzaType">
-                <option id="pizza1type" value="Pizza 1">Pizza 1</option>
-                <option id="pizza2type" value="Pizza 2">Pizza 2</option>
-                <option id="pizza3type" value="Pizza 3">Pizza 3</option>
-                <option id="pizza4type" value="Pizza 4">Pizza 4</option>
-                <option id="pizza5type" value="Pizza 5">Pizza 5</option>
-                <option id="pizza6type" value="Pizza 6">Pizza 6</option>
-              </select>
-            </td>
-          </tr>
-        </div>
-        <div class="form-control pickup-deliver">
-          <tr>
-            <td rowspan="2">
-               <label for="pickupRadio">Pickup ?
-                <input type="radio" id="pickupRadio" name="fav_language" value="pickuporderdeliver" required/>
-               </label><br>
-               <label for="deliverRadio" id="deliverRadioLabel">Deliver ?
-                <input type="radio" id="deliverRadio" name="fav_language" value="deliverorderdeliver" required/>
-               </label>
+           <label for="user-phone">Write your phone number</label><br></br>
 
-            </td>
-          </tr>
-        </div>
-        <div class="form-control">
-        </div>
-        <div class="form-control">
-          <tr>
-            <td>Delivery Info</td>
-            <td>
-              <select name="Delivery Time" id="deliveryTime">
-                <option value="6.30">6.30</option>
-                <option value="7.30">7.30</option>
-                <option value="8.30">8.30</option>
-              </select>
-            </td>
-          </tr>
-        </div>
-        <div class="form-control">
-          <tr>
-            <td>
-              <!-- <input type="submit" value="Submit order" /> -->
-              <input id="resetPizza" type="reset" value="Reset order" required />
-            </td>
-          </tr>
-        </div>
-        <!-- </table> -->
+             <input type="tel" id="user-phone" name:"phone" size="30" maxlength="10" placeholder="Phone number" value="" required />
 
-        <!--continue-->
+       </div>
 
-        <!--https://www.youtube.com/watch?v=Cu0OwlJNXuQ-->
+       <div style="margin-bottom:1em">
+         <p>Please select your favorite size:</p>
+            <input type="radio" id="radioFamily" name="size" value="family" style="margin-left:0.7em">
 
-        <!--add comment -->
-        <button type="submit">Submit</button>
-      </form>
-      <ion-icon name="pizza-outline"></ion-icon>
-    </div>
-  </div>
-  <!------------------------------------------------------------------------------------------------>
+            <label for="radioFamily">Family</label><br>
+
+            <input type="radio" id="radioLarge" name="size" value="large">
+
+            <label for="radioLarge">Large</label><br>
+
+            <input type="radio" id="radioSmall" name="size" value="small">
+
+            <label for="radioSmall">Small</label>
+
+
+       </div>
+       <div class="form-control multiple-pizza">
+
+           <p id="pizzaTypes">Type</p>
+
+             <select name="type" size="4" multiple="multiple" id="pizzaType">
+               <option id="pizza1type" value="Pizza 1">Pizza 1</option>
+               <option id="pizza2type" value="Pizza 2">Pizza 2</option>
+               <option id="pizza3type" value="Pizza 3">Pizza 3</option>
+               <option id="pizza4type" value="Pizza 4">Pizza 4</option>
+               <option id="pizza5type" value="Pizza 5">Pizza 5</option>
+               <option id="pizza6type" value="Pizza 6">Pizza 6</option>
+             </select>
+
+       </div>
+
+
+       <div class="form-control">
+
+           <p>Delivery Info</p>
+
+             <select name="DeliveryTime" id="deliveryTime">
+               <option value="6.30">6.30</option>
+               <option value="7.30">7.30</option>
+               <option value="8.30">8.30</option>
+             </select>
+
+       </div>
+
+
+       <div class="form-control">
+
+             <!-- <input type="submit" value="Submit order" /> -->
+             <!-- <input id="resetPizza" type="reset" value="Reset order" required /><br> -->
+
+         <input type="submit" name="submit" id="submit" value="Submit">
+       </div>
+
+
+       <!--continue-->
+
+       <!--https://www.youtube.com/watch?v=Cu0OwlJNXuQ-->
+
+       <!--add comment -->
+
+     </form>
+     <ion-icon name="pizza-outline"></ion-icon>
+   </div>
+ </div>
+ <!------------------------------------------------------------------------------------------------>
 
   <div class="container">
 
